@@ -74,8 +74,8 @@ d.addEventListener("submit", e=>{
         //e.target es el formulario
         //si el valor viene vacio, voy a agregar, peticion POST
         if(!e.target.id.value){
-        ajax({
             //Crear-POST
+        ajax({
             url:"http://localhost:5000/pokemon",
             method:"POST",
             success:(res)=> location.reload(),
