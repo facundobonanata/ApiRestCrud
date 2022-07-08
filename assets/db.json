@@ -34,6 +34,11 @@
       "nombre": "Chikorita",
       "tipo": "Planta",
       "id": 10
+    },
+    {
+      "nombre": "Abra",
+      "tipo": "Psíquico",
+      "id": 11
     }
   ],
   "personajes": [

@@ -17,7 +17,7 @@
             <input type="text" name="tipo" placeholder="tipo" required>
             <br>
             <input type="submit" type="Enviar">
-            <input type="hidden" name="action"> 
+            <input type="hidden" name="id"> 
         </form>
     </article>
     <article>
@@ -30,8 +30,7 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
-        </tbody>
+        <tbody></tbody>
     </table>
     </article>
  </section> 
@@ -40,10 +39,12 @@
     <td class="name"></td>
     <td class="tipo"></td>
     <td>
-        <button class="edit"></button>
-        <button class="delete"></button>
+        <button class="edit">Editar</button>
+        <button class="delete">Eliminar</button>
         </td>
     </tr>
  </template> 
+ <script src="js/fetch.js"></script>
+
 </body>
 </html>
