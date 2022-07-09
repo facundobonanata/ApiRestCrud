@@ -7,6 +7,9 @@ $template = d.getElementById("crud-template").content
 $fragment = d.createDocumentFragment();
 
 
+
+
+
 //ejecutar funcion getAllPokemon asincrona
 const getAllPokemon = async()=>{
     
@@ -45,6 +48,8 @@ const getAllPokemon = async()=>{
     }
 
 }
+
+
 //la funcion de arriba se ejecuta al cargar el domuneto
 d.addEventListener("DOMContentLoaded", getAllPokemon);
 
@@ -104,6 +109,21 @@ d.addEventListener("submit",async e=>{
 
     }
 })
+let profileImage = document.getElementById('profileImage');
+
+function openFile(event){
+let file = event.target.files[0];
+
+let reader = new FileReader();
+
+reader.onloadend = function () {
+    let dataURL = reader.result;
+    profileImage.src = dataURL;
+};
+reader.readAsDataURL(file);
+}
+
+  
 
 d.addEventListener("click", async e=>{
     if(e.target.matches(".edit")){
@@ -135,3 +155,5 @@ d.addEventListener("click", async e=>{
     }
 }
 })
+
+
