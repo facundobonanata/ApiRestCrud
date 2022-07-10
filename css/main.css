@@ -41,7 +41,7 @@ thead th:nth-child(4) {
     }
       
 th, td {
-    padding: 50px;
+    padding: 20px;
    }
 tbody tr:nth-child(odd) {
     background-color: #da5e00;
@@ -52,8 +52,8 @@ tbody tr:nth-child(even) {
 }   
 
 #img_preview{
-    width:300px;
-    height: 200px;
+    width:200px;
+    height: 150px;
     border: 1px solid black;
     background-position: center;
     background-size: cover;

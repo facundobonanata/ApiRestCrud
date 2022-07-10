@@ -46,7 +46,7 @@
         <button class="edit">Editar</button>
         <button class="delete">Eliminar</button>
         <input type="file" id="image"  onchange="previewFile()" />
-        <button type="button" pnclick="saveNew()">Guardar</button>
+        <button type="button" onclick="saveNew()">Guardar</button>
         </td>
     </tr>
  </template> 
@@ -62,23 +62,25 @@
         preview.src = reader.result;
         }, false);
 
-        if(file){
             reader.readAsDataURL(file)
         }
-    }
+        if (files) {
+    [].forEach.call(files, readAndPreview);
 
-    /*function sabeNew(){
+    }
+    
+    /*function saveNew(){
         imagen_guardada = document.querySelector("#img_preview").getAttribute("src")
 
         let options = {
             
             url:"http://localhost:5000/pokemon",
-            method:"post",
+            method:"POST",
             data:{
                 image: imagen_guardada
             }
         }
-        axios(imagen_guardada)
+        axios(options)
         .then(function(data_res){
             console.log(data_res);
             if(data_res.status == 201)
