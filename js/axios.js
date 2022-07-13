@@ -22,6 +22,10 @@ const getAllPokemon = async()=>{
              $template.querySelector(".edit").dataset.name = el.nombre
              $template.querySelector(".edit").dataset.tipo = el.tipo
              $template.querySelector(".delete").dataset.id = el.id;
+             //img
+             $template.querySelector(".imgPreview").src = el.image;
+
+
 
             /*Hay que crear una variable clone para que importe un nodo,
             el de la etiqueta template con el segundo valor en true para que copie
@@ -59,6 +63,8 @@ d.addEventListener("submit", async e =>{
                 data: JSON.stringify({
                  nombre:e.target.nombre.value,
                  tipo:e.target.tipo.value,
+                 image: e.target.image.value,
+                 
                 })
               },
               res = await axios("http://localhost:5000/pokemon", options)
@@ -81,6 +87,8 @@ d.addEventListener("submit", async e =>{
                 data: JSON.stringify({
                  nombre:e.target.nombre.value,
                  tipo:e.target.tipo.value,
+                 image: e.target.image.value,
+
                 })
               },
               res = await axios(`http://localhost:5000/pokemon/${e.target.id.value}`, options)
@@ -102,8 +110,11 @@ d.addEventListener("click", async e=>{
         $form.nombre.value = e.target.dataset.name;
         $form.tipo.value = e.target.dataset.tipo;
         $form.id.value = e.target.dataset.id;
+        $form.image.src = e.target.dataset.imgPreview;
+
 
     }
+
     if(e.target.matches(".delete")){
         let isDelete = confirm(`¿Estás seguro que deseas eliminar${e.target.dataset.id}?`)
 

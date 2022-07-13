@@ -6,53 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>CRUD API REST FETCH</title>
+    <title>CRUD API REST AXIOS</title>
+    
 </head>
 <body>
- <h1>CRUD API REST FETCH</h1>
+ <h1>Pokedex</h1>
+ <br><br>
  <section class="crud">
-    <article>
+    <article class="article-header">
         <h2 class="crud-title">Agregar Pokemon</h2>
+        <br>
         <form class="crud-form">
             <input type="text" name="nombre" placeholder="nombre" required>
             <br>
+            
             <input type="text" name="tipo" placeholder="tipo" required>
+            <br>
+            
+            <input type="text" id="image"  placeholder="url">
+            <br>
             <br>
             <input type="submit" type="Enviar">
             <input type="hidden" name="id"> 
         </form>
     </article>
+    <video src="img\Dragonite vs. Charizard _ Pokémon Negro y Blanco_ Aventuras en Teselia y más allá _ Clip oficial.mp4" muted loop autoplay></video>
     <article>
-        <h2>Ver Pokemon</h2>
+        <br>
         <table class="crud-table">
         <thead>
-            <tr>
+            <tr class="text-top">
                 <th>Nombre</th>
                 <th>Imagen</th>
                 <th>Tipo</th>
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            
+        </tbody>
     </table>
     </article>
  </section> 
  <template id="crud-template">
     <tr>
         <td class="name"></td>
-        <td><img id="img_preview" src=""></td>
+        <td><img class="imgPreview" src=""></td>
         <td class="tipo"></td>
         <td>
         <button class="edit">Editar</button>
         <button class="delete">Eliminar</button>
-        <input type="file" id="image"  onchange="previewFile()" />
-        <button type="button" onclick="saveNew()">Guardar</button>
+        <!-- <button type="button" onclick="saveNew()">Guardar</button>-->
         </td>
     </tr>
+    
  </template> 
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
+
+<!--img local-->
+<!--<script> 
     function previewFile(){
         const preview = document.querySelector("#img_preview");
         const file = document.querySelector("#image").files[0];
@@ -64,39 +79,11 @@
 
             reader.readAsDataURL(file)
         }
-        if (files) {
-    [].forEach.call(files, readAndPreview);
 
+    function saveNew(){
+        imagen_preview = document.querySelector("#img_preview").getAttribute("src")
     }
-    
-    /*function saveNew(){
-        imagen_guardada = document.querySelector("#img_preview").getAttribute("src")
-
-        let options = {
-            
-            url:"http://localhost:5000/pokemon",
-            method:"POST",
-            data:{
-                image: imagen_guardada
-            }
-        }
-        axios(options)
-        .then(function(data_res){
-            console.log(data_res);
-            if(data_res.status == 201)
-            alert("nice")
-        })
-        .catch(function(error){
-            console.log(error)
-        })
-    
-    
-    }*/
-
-
-
-
-</script>
+</script>-->
  <script src="js/axios.js"></script>
 
 </body>
