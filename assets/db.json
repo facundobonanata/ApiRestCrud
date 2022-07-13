@@ -29,6 +29,30 @@
       "nombre": "Charmander",
       "tipo": "Fuego",
       "image": "img/charmander.com.png"
+    },
+    {
+      "nombre": "Pidgey",
+      "tipo": "Normal",
+      "image": "img/pidgey.com.png",
+      "id": 1
+    },
+    {
+      "nombre": "Dragonite",
+      "tipo": "Dragón",
+      "image": "img/dragonite.com.png",
+      "id": 1
+    },
+    {
+      "nombre": "Chikorita",
+      "tipo": "Planta",
+      "image": "img/chikorita.com.png",
+      "id": 1
+    },
+    {
+      "nombre": "Blastoise",
+      "tipo": "Agua",
+      "image": "img/blastoise.com.png",
+      "id": 1
     }
   ],
   "personajes": [
