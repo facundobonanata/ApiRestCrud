@@ -1,25 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 
 body {
- 
+
     text-align: center;
-    }
+}
 
-    .article-header{
-        position: relative;
-        z-index: 10;
+.article-header {
+    position: relative;
+    z-index: 10;
 
 
-    }
-      
+}
+
 h1 {
 
-    background: -webkit-linear-gradient(rgba(247,214,23,1) 0%, rgb(239, 120, 8) 50%, rgb(255, 221, 1) 100%);
+    background: -webkit-linear-gradient(rgba(247, 214, 23, 1) 0%, rgb(239, 120, 8) 50%, rgb(255, 221, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 80px;
@@ -27,10 +28,10 @@ h1 {
     text-align: center;
     z-index: 10;
     position: relative;
-    }
+}
 
-h2{
-    background: -webkit-linear-gradient(rgba(247,214,23,1) 0%, rgba(233,128,30,1) 50%, rgb(255, 225, 0) 100%);
+h2 {
+    background: -webkit-linear-gradient(rgba(247, 214, 23, 1) 0%, rgba(233, 128, 30, 1) 50%, rgb(255, 225, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 20px;
@@ -39,9 +40,9 @@ h2{
     z-index: 10;
     position: relative;
 
-}    
+}
 
-table.crud-table{
+table.crud-table {
     table-layout: fixed;
     width: 50%;
     border-collapse: collapse;
@@ -51,58 +52,61 @@ table.crud-table{
     margin-right: auto;
     z-index: 10;
     position: relative;
-    
 
 
-    
-    }
-      
+
+
+}
+
 thead th:nth-child(1) {
     width: 10%;
-    }
-      
+}
+
 thead th:nth-child(2) {
     width: 20%;
-    }
-      
+}
+
 thead th:nth-child(3) {
     width: 15%;
-    }
-      
+}
+
 thead th:nth-child(4) {
     width: 35%;
-    }
-      
-th, td {
+}
+
+th,
+td {
     padding: 10px;
-   }
+}
+
 tbody tr:nth-child(odd) {
     background-color: #da5e00;
 }
-  
+
 tbody tr:nth-child(even) {
     background-color: #db7604;
-}   
+}
 
 
 
-.imgPreview{
-    width:100px;
+.imgPreview {
+    width: 100px;
     height: 100px;
     border-radius: 10%;
     background-position: center;
     background-size: cover;
 }
 
-.crud video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  object-fit: cover;
-  opacity: 0.8;
+.crud video {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
 }
 
 input {
@@ -117,19 +121,19 @@ input {
     caret-color: rgb(238, 250, 9);
     border-style: solid;
     border-width: 1px;
-   
-  }
+
+}
 
 .edit {
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  border: 0;
-  padding: 7px 16px;
-  color: #ffffff;
-  background: #e0ae09;
-  border-radius: 4px;
-  box-shadow: rgb(239, 243, 3) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    color: #ffffff;
+    background: #e0ae09;
+    border-radius: 4px;
+    box-shadow: rgb(239, 243, 3) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
 }
 
 .delete {
@@ -144,7 +148,7 @@ input {
     box-shadow: rgb(239, 243, 3) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
 }
 
-.text-top{
+.text-top {
     background: -webkit-linear-gradient(rgb(254, 85, 0) 0%, rgb(220, 63, 1) 50%, rgb(255, 77, 28) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,21 +157,21 @@ input {
     text-align: center;
     z-index: 10;
     position: relative;
-    }
+}
 
-    .name{
+.name {
     font-family: cursive;
     font-size: 16px;
     text-align: center;
-    color: #f0f404;    
+    color: #f0f404;
     position: relative;
-    }
+}
 
-    .tipo{
+.tipo {
     font-family: cursive;
     font-size: 16px;
     text-align: center;
-    color: #f0f404;    
+    color: #f0f404;
     position: relative;
 
-    }
+}

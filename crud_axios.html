@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>CRUD API REST AXIOS</title>
-    
-</head>
-<body>
- <h1>Pokedex</h1>
- <br><br>
- <section class="crud">
-    <article class="article-header">
+  </head>
+  <body>
+    <h1>Pokedex</h1>
+    <br /><br />
+    <section class="crud">
+      <article class="article-header">
         <h2 class="crud-title">Agregar Pokemon</h2>
-        <br>
+        <br />
         <form class="crud-form">
-            <input type="text" name="nombre" placeholder="nombre" required>
-            <br>
-            
-            <input type="text" name="tipo" placeholder="tipo" required>
-            <br>
-            
-            <input type="text" id="image"  placeholder="url">
-            <br>
-            <br>
-            <input type="submit" type="Enviar">
-            <input type="hidden" name="id"> 
+          <input type="text" name="nombre" placeholder="nombre" required />
+          <br />
+
+          <input type="text" name="tipo" placeholder="tipo" required />
+          <br />
+
+          <input type="text" id="image" placeholder="url" />
+          <br />
+          <br />
+          <input type="submit" type="Enviar" />
+          <input type="hidden" name="id" />
         </form>
-    </article>
-    <video src="img\Dragonite vs. Charizard _ Pokémon Negro y Blanco_ Aventuras en Teselia y más allá _ Clip oficial.mp4" muted loop autoplay></video>
-    <article>
-        <br>
+      </article>
+      <video
+        src="img\Dragonite vs. Charizard _ Pokémon Negro y Blanco_ Aventuras en Teselia y más allá _ Clip oficial.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <article>
+        <br />
         <table class="crud-table">
-        <thead>
+          <thead>
             <tr class="text-top">
-                <th>Nombre</th>
-                <th>Imagen</th>
-                <th>Tipo</th>
-                <th>Acciones</th>
+              <th>Nombre</th>
+              <th>Imagen</th>
+              <th>Tipo</th>
+              <th>Acciones</th>
             </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-    </article>
- </section> 
- <template id="crud-template">
-    <tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <template id="crud-template">
+      <tr>
         <td class="name"></td>
-        <td><img class="imgPreview" src=""></td>
+        <td><img class="imgPreview" src="" /></td>
         <td class="tipo"></td>
         <td>
-        <button class="edit">Editar</button>
-        <button class="delete">Eliminar</button>
-        <!-- <button type="button" onclick="saveNew()">Guardar</button>-->
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+          <!-- <button type="button" onclick="saveNew()">Guardar</button>-->
         </td>
-    </tr>
-    
- </template> 
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      </tr>
+    </template>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<!--img local-->
-<!--<script> 
+    <!--img local-->
+    <!--<script> 
     function previewFile(){
         const preview = document.querySelector("#img_preview");
         const file = document.querySelector("#image").files[0];
@@ -84,7 +85,6 @@
         imagen_preview = document.querySelector("#img_preview").getAttribute("src")
     }
 </script>-->
- <script src="js/axios.js"></script>
-
-</body>
+    <script src="js/axios.js"></script>
+  </body>
 </html>
